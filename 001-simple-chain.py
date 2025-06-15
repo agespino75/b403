@@ -5,7 +5,7 @@ openai_api_key = os.environ["OPENAI_API_KEY"]
 
 from langchain_openai import ChatOpenAI
 
-chatModel = ChatOpenAI(model="gpt-3.5-turbo-0125")
+chatModel = ChatOpenAI(model="gpt-4o-mini", temperature=0.9,)
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
@@ -14,7 +14,7 @@ prompt = ChatPromptTemplate.from_template("tell me a curious fact about {politic
 
 chain = prompt | chatModel | StrOutputParser()
 
-response = chain.invoke({"politician": "JFK"})
+response = chain.invoke({"politician": "El Peje"})
 
 print("\n----------\n")
 

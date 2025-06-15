@@ -252,7 +252,7 @@ prompt_branch = RunnableBranch(
 
 from typing import Literal
 
-from langchain.pydantic_v1 import BaseModel
+from pydantic import BaseModel
 from langchain.output_parsers.openai_functions import PydanticAttrOutputFunctionsParser
 from langchain_core.utils.function_calling import convert_to_openai_function
 

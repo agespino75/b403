@@ -55,5 +55,6 @@ print("Chains in RAG:")
 
 print("\n----------\n")
 print(response)
+print(response)
 
 print("\n----------\n")

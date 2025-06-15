@@ -5,7 +5,7 @@ openai_api_key = os.environ["OPENAI_API_KEY"]
 
 from langchain_openai import ChatOpenAI
 
-model = ChatOpenAI(model="gpt-3.5-turbo")
+model = ChatOpenAI(model="gpt-4o-mini")
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
@@ -340,6 +340,7 @@ print("\n----------\n")
 print("Fallback for Chains:")
 
 print("\n----------\n")
-#print(response)
+#
+print(response)
 
 print("\n----------\n")
